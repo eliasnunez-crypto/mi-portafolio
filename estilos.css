@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Menú de navegación */
+
+header {
+    background-color: #111827;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Presentación */
+
+.inicio {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+}
+
+.inicio h1 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.subtitulo {
+    color: #7dd3fc;
+    font-weight: bold;
+}
+
+.inicio p {
+    max-width: 650px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background-color: #38bdf8;
+    color: #111827;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
+
+section:not(.inicio) {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+/* Tarjetas */
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 240px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+}
+
+.tarjeta h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.proyecto {
+    width: 290px;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio h1 {
+        font-size: 28px;
+    }
+
+    .inicio {
+        padding: 50px 7%;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+}
